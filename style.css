@@ -1,0 +1,129 @@
+body {
+  width: 1440px;
+  height: 100vh;
+  background: url("images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 173px 400px;
+  grid-template-areas: "image" "text";
+
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+  background: white;
+  border-radius: 18px;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card .card-image {
+  background: url("images/illustration-hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.card .card-text {
+  grid-area: text;
+  margin: 35px;
+}
+.card-text .main-header {
+  margin: 0;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.card-text .main-p {
+  color: hsl(224, 23%, 55%);
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.plans-card {
+  display: flex;
+  background: hsl(225, 100%, 98%);
+  border-radius: 18px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plans-card .plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan .plan-text {
+  margin-left: 10px;
+}
+
+.plan-text .plan-plan {
+  font-weight: 900;
+  font-size: 14px;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-text .plan-year {
+  font-size: 13px;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+.plans-card a {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.plans-card a:hover {
+  color: hsl(245, 80%, 65%);
+  text-decoration: none;
+}
+
+.card-text .submit-btn {
+  display: flex;
+  flex-direction: column;
+}
+.submit-btn .submit {
+  padding: 13px;
+  width: 100%;
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background: hsl(245, 75%, 52%);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(56, 41, 224, 0.6);
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.submit-btn .submit:hover {
+  background: hsl(245, 80%, 65%);
+  box-shadow: 5px 5px 15px rgba(106, 94, 237, 0.6);
+}
+
+.submit-btn .cancel {
+  display: inline-block;
+  background: white;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  transition: 0.3s ease;
+}
+
+.submit-btn .cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
